@@ -84,7 +84,8 @@ class LoginPage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                SizedBox(
+                Column(children: [
+                  SizedBox(
                     width: double.maxFinite,
                     height: 50.0,
                     child: ElevatedButton(
@@ -98,7 +99,29 @@ class LoginPage extends StatelessWidget {
                                   RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(10),
                           ))),
-                    ))
+                    ),
+                  ),
+                  TextButton(
+                      onPressed: () => {},
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Don’t have any account?',
+                            style: TextStyle(color: Colors.white, fontSize: 14),
+                          ),
+                          Padding(
+                              padding: EdgeInsets.only(left: 3),
+                              child: Text(
+                                'Sign Up here',
+                                style: TextStyle(
+                                    color: Color(0xff0ACF83),
+                                    fontSize: 14,
+                                    decoration: TextDecoration.underline),
+                              ))
+                        ],
+                      ))
+                ])
               ])),
         ],
       ),

@@ -1,4 +1,6 @@
 import 'package:audio_store/core/auth/login.dart';
+import 'package:audio_store/core/home_page.dart';
+import 'package:audio_store/core/search_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -15,7 +17,9 @@ class AppRoot extends StatelessWidget {
       )),
       initialRoute: '/',
       routes: {
-        '/': (context) => LoginPage(),
+        // '/': (context) => LoginPage(),
+        // '/': (context) => HomePage(),
+        '/': (context) => SearchScreen(),
       },
     );
   }
