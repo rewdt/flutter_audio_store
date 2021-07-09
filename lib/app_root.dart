@@ -1,4 +1,5 @@
 import 'package:audio_store/core/auth/login.dart';
+import 'package:audio_store/core/explore_products.dart';
 import 'package:audio_store/core/home_page.dart';
 import 'package:audio_store/core/search_screen.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +20,8 @@ class AppRoot extends StatelessWidget {
       routes: {
         // '/': (context) => LoginPage(),
         // '/': (context) => HomePage(),
-        '/': (context) => SearchScreen(),
+        // '/': (context) => SearchScreen(),
+        '/': (context) => ExploreProducts(),
       },
     );
   }
