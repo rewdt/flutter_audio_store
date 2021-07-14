@@ -18,7 +18,9 @@ class SearchScreen extends StatelessWidget {
               Icons.chevron_left,
               color: Colors.black,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context);
+            },
           ),
           actions: [
             IconButton(
@@ -44,6 +46,9 @@ class SearchScreen extends StatelessWidget {
                     height: 15,
                   ),
                   TextField(
+                    onEditingComplete: () {
+                      Navigator.pushNamed(context, '/explore');
+                    },
                     style: TextStyle(height: 1),
                     decoration: InputDecoration(
                         hintStyle: TextStyle(color: Color(0xffbababa)),

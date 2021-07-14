@@ -67,6 +67,9 @@ class HomePageState extends State<HomePage> {
                                 height: 25,
                               ),
                               TextField(
+                                onTap: () {
+                                  Navigator.pushNamed(context, '/search');
+                                },
                                 style: TextStyle(height: 1),
                                 decoration: InputDecoration(
                                     hintStyle:

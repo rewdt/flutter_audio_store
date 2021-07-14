@@ -89,7 +89,9 @@ class LoginPage extends StatelessWidget {
                     width: double.maxFinite,
                     height: 50.0,
                     child: ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.pushNamed(context, '/home');
+                      },
                       child: Text('Sign In'),
                       style: ButtonStyle(
                           backgroundColor:

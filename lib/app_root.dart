@@ -18,10 +18,10 @@ class AppRoot extends StatelessWidget {
       )),
       initialRoute: '/',
       routes: {
-        // '/': (context) => LoginPage(),
-        // '/': (context) => HomePage(),
-        // '/': (context) => SearchScreen(),
-        '/': (context) => ExploreProducts(),
+        '/': (context) => LoginPage(),
+        '/home': (context) => HomePage(),
+        '/search': (context) => SearchScreen(),
+        '/explore': (context) => ExploreProducts(),
       },
     );
   }
